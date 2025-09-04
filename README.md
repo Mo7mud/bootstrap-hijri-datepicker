@@ -1,16 +1,15 @@
 # Demo
-See  [Live Demo](http://hijri-datepicker.azurewebsites.net/)
+See  [Live Demo](https://mo7mud.github.io/bootstrap-hijri-datepicker/src/)
 
 # Getting Started
 Bootstrap Hijri Date picker v1.0.0
 
-![sample](http://files.balbarak.com/file/598299)
-![sample two](http://files.balbarak.com/file/58464)
+<!-- ![sample](http://files.balbarak.com/file/598299) -->
+<!-- ![sample two](http://files.balbarak.com/file/58464) -->
 
 ## Installation
-
-Download the [latest release](https://github.com/balbarak/bootstrap-hijri-datepicker/releases) or
-use css and javascript files in `dist` folder
+<!-- [latest release](https://github.com/balbarak/bootstrap-hijri-datepicker/releases) -->
+Download the  repository and use css and javascript files in `dist` folder
 
 ### Required libraries
 * Jquery >  v3.1 [jquery](https://jquery.com/)
@@ -108,7 +107,7 @@ use css and javascript files in `dist` folder
 
 ## Docs
 
-See  [Documentation](http://hijri-datepicker.azurewebsites.net/doc)
+<!-- See  [Documentation](http://hijri-datepicker.azurewebsites.net/doc) -->
 
 ## Acknowledgements
 
