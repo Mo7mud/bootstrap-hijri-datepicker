@@ -184,7 +184,7 @@
                         .append($('<th>').addClass('prev').attr('data-action', 'previous')
                             .append($('<span>').html(options.icons.previous))
                         )
-                        .append($('<th>').addClass('picker-switch').attr('data-action', 'pickerSwitch').attr('colspan', (options.calendarWeeks ? '6' : '5')))
+                        .append($('<th>').addClass('picker-switch almarai-bold').attr('data-action', 'pickerSwitch').attr('colspan', (options.calendarWeeks ? '6' : '5')))
                         .append($('<th>').addClass('next').attr('data-action', 'next')
                             .append($('<span>').html(options.icons.next))
                         )
@@ -336,7 +336,7 @@
                     dateView = $('<div>').addClass('datepicker').append(getDatePickerTemplate()),
                     timeView = $('<div>').addClass('timepicker').append(getTimePickerTemplate()),
                     content = $('<ul>').addClass('list-unstyled'),
-                    toolbar = $('<li>').addClass('picker-switch' + (options.collapse ? ' accordion-toggle' : '')).append(getToolbar());
+                    toolbar = $('<li>').addClass('picker-switch almarai-bold' + (options.collapse ? ' accordion-toggle' : '')).append(getToolbar());
 
                 if (options.inline) {
                     template.removeClass('dropdown-menu');
@@ -520,7 +520,7 @@
                 }
 
                 while (currentDate.isBefore(viewDate.clone().endOf('w'))) {
-                    row.append($('<th>').addClass('dow').text(currentDate.format('dd')));
+                    row.append($('<th>').addClass('dow almarai-bold').text(currentDate.format('dd')));
                     currentDate.add(1, 'days');
                 }
                 widget.find('.datepicker-days thead').append(row);
@@ -631,7 +631,7 @@
 
                 while (monthsShort.isSame(viewDate, 'years')) {
 
-                    spans.push($('<span>').attr('data-action', 'selectMonth').addClass('month').text(monthsShort.format('MMM')));
+                    spans.push($('<span>').attr('data-action', 'selectMonth').addClass('month almarai-regular').text(monthsShort.format('MMM')));
 
                     monthsShort.add(1, 'months');
 
@@ -653,7 +653,7 @@
                     spans.push($('<span>')
                         .attr('data-action', 'selectMonth')
                         .attr('data-month', currentMonth)
-                        .addClass('month').text(monthsShort.format('iMMM')));
+                        .addClass('month almarai-regular').text(monthsShort.format('iMMM')));
                     monthsShort.add(1, 'iMonth');
                     currentMonth++;
                 }
