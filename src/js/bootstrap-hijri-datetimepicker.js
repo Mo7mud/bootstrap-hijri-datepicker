@@ -560,10 +560,7 @@
                 if (options.maxDate && targetMoment.isAfter(options.maxDate, granularity)) {
                     return false;
                 }
-                if (!options.hijri && options.daysOfWeekDisabled && granularity === 'days' && options.daysOfWeekDisabled.indexOf(targetMoment.day()) !== -1) {
-                    return false;
-                }
-                if (options.hijri && options.daysOfWeekDisabled && granularity === 'd' && options.daysOfWeekDisabled.indexOf(targetMoment.day()) !== -1) {
+                if (options.daysOfWeekDisabled && granularity === 'd' && options.daysOfWeekDisabled.indexOf(targetMoment.day()) !== -1) {
                     return false;
                 }
                 if (options.disabledHours && (granularity === 'h' || granularity === 'm' || granularity === 's') && isInDisabledHours(targetMoment)) {
@@ -874,7 +871,7 @@
                     if (currentDate.isSame(date, 'days') && !unset) {
                         clsName += ' active';
                     }
-                    if (!isValid(currentDate, 'days')) {
+                    if (!isValid(currentDate, 'd')) {
                         clsName += ' disabled';
                     }
                     if (currentDate.isSame(getMoment(), 'days')) {
